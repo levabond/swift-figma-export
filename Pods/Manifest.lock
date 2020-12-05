@@ -1,0 +1,16 @@
+PODS:
+  - FigmaExport (0.18.4)
+
+DEPENDENCIES:
+  - FigmaExport
+
+SPEC REPOS:
+  trunk:
+    - FigmaExport
+
+SPEC CHECKSUMS:
+  FigmaExport: 3eba1385ade2f31a0a6a48cfa70bd307dc81e228
+
+PODFILE CHECKSUM: e8e50b51f381d9d4bd530436199bff3fb186ec88
+
+COCOAPODS: 1.10.0

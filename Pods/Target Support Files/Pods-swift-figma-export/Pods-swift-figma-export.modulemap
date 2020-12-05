@@ -1,0 +1,6 @@
+framework module Pods_swift_figma_export {
+  umbrella header "Pods-swift-figma-export-umbrella.h"
+
+  export *
+  module * { export * }
+}

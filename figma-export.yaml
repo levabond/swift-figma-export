@@ -1,0 +1,50 @@
+figma:
+  lightFileId: QwF30YrucxVwQyBNT0C09i
+
+ios:
+  # Path to the Assets.xcassets directory
+  xcodeprojPath: "./swift-figma-export.xcodeproj"
+  # Xcode Target containing resources and corresponding swift code
+  target: "swift-figma-export"
+  # Path to the Assets.xcassets directory
+  xcassetsPath: "./swift-figma-export/Resource/Assets.xcassets"
+  # Is Assets.xcassets located in the main bundle?
+  xcassetsInMainBundle: false
+
+  colors:
+    # Should be generate color assets instead of pure swift code
+    useColorAssets: True
+    # Name of the folder inside Assets.xcassets where to place colors (.colorset directories)
+    assetsFolder: Colors
+    # Color name style: camelCase or snake_case
+    nameStyle: camelCase
+    # [optional] Absolute or relative path to swift file where to export UIKit colors (UIColor) for accessing from the code (e.g. UIColor.backgroundPrimary)
+    colorSwift: "./swift-figma-export/Source/UIColor+extension.swift"
+
+     # Parameters for exporting icons
+  icons:
+    format: pdf
+    # Name of the folder inside Assets.xcassets where to place icons (.imageset directories)
+    assetsFolder: Icons
+    # Icon name style: camelCase or snake_case
+    nameStyle: camelCase
+    # [optional] Absolute or relative path to swift file where to generate extension for UIImage for accessing icons from the code (e.g. UIImage.ic24ArrowRight)
+    imageSwift: "./swift-figma-export/Source/UIImage+extension_icons.swift"
+
+  # Parameters for exporting images
+  images:
+    # Name of the folder inside Assets.xcassets where to place images (.imageset directories)
+    assetsFolder: Illustrations
+    # Image name style: camelCase or snake_case
+    nameStyle: camelCase
+    # [optional] Absolute or relative path to swift file where to generate extension for UIImage for accessing illustrations from the code (e.g. UIImage.illZeroNoInternet)
+    imageSwift: "./swift-figma-export/Source/UIImage+extension_illustrations.swift"
+
+  # Parameters for exporting typography
+  typography:
+    # Path to directory where to place UIFont+extension.swift file
+    fontSwift: "./swift-figma-export/Source/UIFont+extension.swift"
+    # Will FigmaExport generate UILabel for each text style (font) e.g. HeaderLabel, BodyLabel, CaptionLabel.
+    generateLabels: true
+    # Path to directory where to place UILabel for each text style (font) (Requred if generateLabels = true)
+    labelsDirectory: "./swift-figma-export/Source/"
